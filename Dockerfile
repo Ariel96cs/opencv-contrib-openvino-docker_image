@@ -2,6 +2,7 @@ FROM openvino/ubuntu18_dev:2020.3
 
 USER root
 RUN apt-get update && apt-get install -y --no-install-recommends git
+RUN apt-get -y install wget
 
 # opencv-contrib
 ADD opencv_contrib.sh /home/opencv_contrib.sh
