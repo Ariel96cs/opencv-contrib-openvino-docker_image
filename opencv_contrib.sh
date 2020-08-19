@@ -1,6 +1,6 @@
 #!/bin/bash
 cvVersion="master"
-cd ~/installation
+cd /home
 cwd=$(pwd)
 
 git clone https://github.com/opencv/opencv_contrib.git
