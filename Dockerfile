@@ -10,8 +10,11 @@ RUN bash /home/opencv_contrib.sh
 # opencv
 ADD opencv_prepare.sh /home/opencv_prepare.sh
 RUN bash /home/opencv_prepare.sh
-
 ADD opencv_install.sh /home/opencv_install.sh
+
+#cvlib dependencies
+ADD cvlib_dependencies.sh /home/cvlib_dependencies.sh
+RUN /home/cvlib_dependencies.sh
 
 ADD README.md /home/README.md
 
