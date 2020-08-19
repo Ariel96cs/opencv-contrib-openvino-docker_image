@@ -14,7 +14,7 @@ ADD opencv_install.sh /home/opencv_install.sh
 
 #cvlib dependencies
 ADD cvlib_dependencies.sh /home/cvlib_dependencies.sh
-RUN /home/cvlib_dependencies.sh
+RUN bash /home/cvlib_dependencies.sh
 
 ADD README.md /home/README.md
 
