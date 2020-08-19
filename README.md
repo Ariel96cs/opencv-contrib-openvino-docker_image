@@ -10,17 +10,36 @@
 
 do not close the terminal or stop the process if you want to install opencv.
 
+## Install dlib 
+
+In the just running container prompt , run:
+
+`sh /home/cvlib_dependencies.sh `
+
+## Install additional dependencies for cvlib
+
+In the just running container prompt , run:
+
+`sh /home/cvlib_dependencies.sh `
+
+## Download opencv_contrib
+
+In the just running container prompt , run:
+
+` sh /home/opencv_contrib.sh `
+
 ## Install OpenCV 4.3
 
 In the just running container prompt , run:
 
-` ./home/opencv_install.sh `
+`sh /home/opencv_install.sh `
+
 
 ## Commit changes to Docker image 
 
 `docker commit -m "Installed openCV4.3" -p CONTAINER_ID opencv-openvino-dev`
 
-Change the CONTAINER_ID for its real value in docker ps.
+Using another terminal, change the CONTAINER_ID for its real value in docker ps.
 
 
 
