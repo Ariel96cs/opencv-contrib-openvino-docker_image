@@ -20,7 +20,6 @@ ADD nexus.sh /home/nexus.sh
 RUN bash /home/nexus.sh
 
 
-
 # opencv-contrib
 ADD opencv_contrib.sh /home/opencv_contrib.sh
 RUN bash /home/opencv_contrib.sh

@@ -12,7 +12,8 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
         -D WITH_INF_ENGINE=ON \
         -D ENABLE_CXX11=ON \
         -D CMAKE_FIND_ROOT_PATH="/opt/intel/openvino_2020.3.194/deployment_tools" \
-        -D -DINF_ENGINE_INCLUDE_DIRS="/opt/intel/openvino_2020.3.194/deployment_tools/inference_engine/include" -D INF_ENGINE_LIB_DIRS="/opt/intel/openvino_2020.3.194/deployment_tools/inference_engine/lib/intel64" \
+        -D INF_ENGINE_INCLUDE_DIRS="/opt/intel/openvino_2020.3.194/deployment_tools/inference_engine/include" \
+        -D INF_ENGINE_LIB_DIRS="/opt/intel/openvino_2020.3.194/deployment_tools/inference_engine/lib/intel64" \
         -D WITH_TBB=ON \
         -D WITH_OPENGL=ON \
         -D INF_ENGINE_RELEASE=2020030000 ..
