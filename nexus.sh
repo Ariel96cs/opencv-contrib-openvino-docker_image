@@ -9,7 +9,7 @@ echo deb https://nexus.electronicid.eu/repository/apt-edge xenial main | sudo te
 apt-get install curl
 
 # add repository public key
-curl -f -u user:pass https://nexus.electronicid.eu/repository/keys/apt/gpg | sudo apt-key add -
+curl -f -u $nexus_user:$nexus_user_password https://nexus.electronicid.eu/repository/keys/apt/gpg | sudo apt-key add -
 
 
 # adding nexus credentials for access to repository
