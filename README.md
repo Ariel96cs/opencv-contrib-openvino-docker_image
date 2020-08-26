@@ -7,7 +7,7 @@
 #### IMPORTANT: The use of ARG is not save for credentials after the build phase, so, don't share the image built.
 
 2-) Build the image:
-` docker build --build-arg NEXUS_USER --build-arg NEXUS_USER_PASSWORD --tag opencv-openvino-dev .`
+` docker build --build-arg $NEXUS_USER --build-arg $NEXUS_USER_PASSWORD --tag opencv-openvino-dev .`
 
 ## Run container
 
