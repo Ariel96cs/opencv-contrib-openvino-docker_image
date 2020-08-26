@@ -1,8 +1,13 @@
 # OpenCV 4.3.0 docker image with openCV-contrib and openVINO 2020.3.194
 
 ## Build image
+1-) For downloading some usefull packages, create the following enviroment variables:
+` NEXUS_USER="<user-name>"`,
+` NEXUS_USER_PASSWORD="<user-password>"`.
+#### IMPORTANT: The use of ARG is not save for credentials after the build phase, so, don't share the image built.
 
-` docker build --tag opencv-openvino-dev .`
+2-) Build the image:
+` docker build --build-arg NEXUS_USER --build-arg NEXUS_USER_PASSWORD --tag opencv-openvino-dev .`
 
 ## Run container
 
@@ -74,3 +79,5 @@ or
 and finally:
 
 `docker rmi IMAGE_NAME` 
+
+or add -f flag to force image erase.
