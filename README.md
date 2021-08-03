@@ -4,7 +4,7 @@
 1-) For downloading some usefull packages, create the following enviroment variables:
 ` NEXUS_USER="<user-name>"`,
 ` NEXUS_USER_PASSWORD="<user-password>"`.
-#### IMPORTANT: The use of ARG is not save for credentials after the build phase, so, don't share the image built.
+#### IMPORTANT: The use of ARG is not save for credentials after the build phase, so, don't share the built image.
 
 2-) Build the image:
 ` docker build --build-arg $NEXUS_USER --build-arg $NEXUS_USER_PASSWORD --tag opencv-openvino-dev .`
